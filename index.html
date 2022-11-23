@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SpaceX</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/script.js"></script>
+    <script>
+      const btn = document.getElementById("menubtn");
+      btn?.addEventListener("click", navToggle);
+      function navToggle() {
+        console.log("clicked");
+        btn.classList.toggle("open");
+      }
+    </script>
   </head>
   <body>
     <header class="main-header">
@@ -27,15 +34,27 @@
         </ul>
       </nav>
     </header>
+    <!-- hamburger menu  -->
+    <button
+      id="menubtn"
+      class="hamburger"
+      type="button"
+      aria-label="hamburger"
+    >
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+
     <!-- section-A -->
 
     <section class="section-a">
       <div class="section-inner">
         <h4>Upcoming Launch</h4>
-        <h2>CRS-25 Mission</h2>
+        <h2>CRS-26 Mission</h2>
         <div href="#" class="btn">
           <div class="hover"></div>
-          <span>Rewatch</span>
+          <span>watch</span>
         </div>
       </div>
       <div class="scroll-arrow">
@@ -49,12 +68,15 @@
         </svg>
       </div>
     </section>
-       <!-- section-B -->
-       <!-- TODO: Add section-B -->
-       <section class="section-a">
+    <!-- section-B -->
+
+    <section class="section-b">
       <div class="section-inner">
-        <h4>Upcoming Launch</h4>
-        <h2>CRS-25 Mission</h2>
+        <h4>RECENT LAUNCH</h4>
+        <h2>
+          EUTELSAT 10B <br />
+          MISSION
+        </h2>
         <div href="#" class="btn">
           <div class="hover"></div>
           <span>Rewatch</span>
@@ -71,5 +93,53 @@
         </svg>
       </div>
     </section>
+    <!-- section-c -->
+    <section class="section-c">
+      <div class="section-inner">
+        <h4>RECENT LAUNCH</h4>
+        <h2>
+          STARSHIP SELECTED<br />BY NASA TO SUPPORT <br />
+          SUSTAINED LUNAR<br />EXPLORATION
+        </h2>
+        <div href="#" class="btn">
+          <div class="hover"></div>
+          <span>Learn more</span>
+        </div>
+      </div>
+      <div class="scroll-arrow">
+        <svg width="30px" height="20px">
+          <path
+            stroke="#ffffff"
+            fill="none"
+            stroke-width="2px"
+            d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!-- section-d -->
+    <section class="section-d">
+      <div class="section-inner">
+        <h2>STARSHIP UPDATE</h2>
+        <div href="#" class="btn">
+          <div class="hover"></div>
+          <span>Learn more</span>
+        </div>
+      </div>
+    </section>
+    <!-- footer  -->
+    <!-- TODO: fix for the mobile  -->
+    <footer>
+      <ul>
+        <li><a class="spacex-text" href="#"> SPACEX © 2022</a></li>
+        <li><a href="#">TWITTER</a></li>
+        <li><a href="#">YOUTUBE</a></li>
+        <li><a href="#">INSTAGRAM</a></li>
+        <li><a href="#">FLICKR</a></li>
+        <li><a href="#">LINKEDIN</a></li>
+        <li><a href="#">PRIVACY POLICY</a></li>
+        <li><a href="#">SUPPLIERS</a></li>
+      </ul>
+    </footer>
   </body>
 </html>

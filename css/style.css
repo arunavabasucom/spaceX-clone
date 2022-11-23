@@ -122,17 +122,28 @@ section{
 
 /* Background images*/
 .section-a{
-    background-image: url('../img/section-a.webp');
+    background-image: url('../spacex-images/Homepage_Desktop.webp');
 }
+.section-b{
+    background-image: url('../spacex-images/Homepage_Desktop\ \(1\).webp');
+}
+.section-c{
+    background-image: url('../spacex-images/hls-resized-2.webp');
+}
+.section-d{
+    background-image: url('../spacex-images/S20_Chopstick_Stack_Desktop.webp');
+}
+
 .btn{
     position: relative;
     display: inline-block;
     cursor: pointer;
     text-align: center;
-    max-width: 130px;
+    max-width: 200px;
     padding: 15px  30px;
     margin-top: 10px;
     border: 2px solid #fff;
+    border-radius: 10px;
     text-transform: uppercase;
     font-weight: bold;
     overflow: hidden;
@@ -169,6 +180,81 @@ section{
     animation: fadeBounce 5s infinite; /* every 5s it doing the animation infinite time*/
 
 }
+/*Footer*/
+footer{
+    position: relative;
+    padding:55px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+footer ul li a{
+    font-size: 12px;
+    transition: color 0.6s;
+
+}
+footer ul li a:hover{
+    color:#aaa;
+}
+
+.spacex-text{
+    color: gray;
+    cursor: auto;
+
+
+}
+
+
+/*Hamburger menu*/
+.hamburger{
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    z-index: 10;
+    cursor: pointer;
+    width:20px;
+    height:20px;
+    background:none;
+    border:none;
+
+}
+
+.hamburger-top,.hamburger-middle,.hamburger-bottom{
+    position: absolute;
+    width:20px;
+    height:2px;
+    background-color: #fff;
+    left:0px;
+    top:0px;
+}
+.hamburger-middle{
+    transform: translateY(5px);
+
+}
+.hamburger-bottom{
+    transform: translateY(10px);
+}
+
+.open{
+    transform: rotate(90deg);
+}
+
+.open .hamburger-top{
+    transform: rotate(45deg) translateX(5px) translateY(5px);
+}
+.open .hamburger-middle{
+   display: none;
+}
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateX(-5px) translateY(-5px);
+}
+
+
+
 /* Animations */
 @keyframes fadeInUp{
     0%{
@@ -195,5 +281,44 @@ section{
         opacity: 1;
         transform : translateY(0);
     }
+
+}
+/* Media Queries */
+
+
+@media (max-width: 960px){
+
+    /*Hide desktop menu*/
+    .desktop-main-menu{
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 650px){
+
+ .section-inner{
+    bottom: 75px;
+    left:20px;
+ }
+ .section-inner h2{
+    font-size: 40px;
+
+ }
+
+ footer ul li:first-child{
+    position: absolute;
+    top:30px;
+    left: 50%;
+    transform:translate(-50%)
+ }
+ footer ul li{
+    margin-right: 15px;
+ }
+ .logo{
+    width: 150px;
+    margin: auto;
+ }
 
 }
