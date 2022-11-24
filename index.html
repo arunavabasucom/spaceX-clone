@@ -4,18 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SpaceX</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script>
-      const btn = document.getElementById("menubtn");
-      btn?.addEventListener("click", navToggle);
-      function navToggle() {
-        console.log("clicked");
-        btn.classList.toggle("open");
-      }
-    </script>
+    <script src="./js/script.js" defer></script>
+    <title>SpaceX</title>
   </head>
   <body>
+    <div id="overlay"></div>
+    <div id="mobile-menu" class="mobile-main-menu">
+      <ul>
+        <li><a href="#">Mission</a></li>
+        <li><a href="#">launches</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Updates</a></li>
+        <li><a href="#">Shop</a></li>
+
+        <li class="mobile-only"><a href="falcon9.html">Falcon 9</a></li>
+        <li class="mobile-only">
+          <a href="falcon-heavy.html">Falcon Heavy</a>
+        </li>
+        <li class="mobile-only"><a href="dragon.html">Dragon</a></li>
+        <li class="mobile-only"><a href="#">Starship</a></li>
+        <li class="mobile-only"><a href="#">Human Spaceflight</a></li>
+        <li class="mobile-only"><a href="#">Rideshare</a></li>
+        <li class="mobile-only"><a href="#"> Starlink</a></li>
+        <li class="mobile-only"><a href="#">Shop</a></li>
+      </ul>
+    </div>
     <header class="main-header">
       <div class="logo">
         <a href="index.html">
@@ -24,19 +38,21 @@
       </div>
       <nav class="desktop-main-menu">
         <ul>
+          <!-- TODO:add proper header -->
           <li><a href="falcon9.html">Falcon 9</a></li>
           <li><a href="falcon-heavy.html">Falcon Heavy</a></li>
           <li><a href="dragon.html">Dragon</a></li>
           <li><a href="#">Starship</a></li>
           <li><a href="#">Human Spaceflight</a></li>
           <li><a href="#">Rideshare</a></li>
+          <li><a href="#"> Starlink</a></li>
           <li><a href="#">Shop</a></li>
         </ul>
       </nav>
     </header>
     <!-- hamburger menu  -->
     <button
-      id="menubtn"
+      id="menu-btn"
       class="hamburger"
       type="button"
       aria-label="hamburger"
@@ -141,5 +157,6 @@
         <li><a href="#">SUPPLIERS</a></li>
       </ul>
     </footer>
+    <div id="test">Hello</div>
   </body>
 </html>
