@@ -5,12 +5,11 @@
 This project is a clone of the current SpaceX website, built using HTML, CSS, and vanilla JavaScript. It aims to recreate the functionality and appearance of the original website, with some minor changes to adapt to different screen sizes.
 
 ## Table of Contents
-
-- Features
-- Installation
-- Usage
-- Contributing
-- License
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#installation-and-usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ### Features
 
