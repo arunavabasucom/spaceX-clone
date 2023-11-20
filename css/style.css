@@ -434,6 +434,7 @@ footer ul li a:hover{
     }
     footer ul {
         display: flex;
+        gap: 1px;
         flex-wrap: wrap;
     }
 }
